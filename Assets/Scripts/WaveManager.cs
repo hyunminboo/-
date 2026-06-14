@@ -226,19 +226,6 @@ public class WaveManager : MonoBehaviour
                 {
                     GoIndicator.instance.ShowGo();
                 }
-
-                // Wave 2 클리어 시 미션 클리어 처리
-                if (currentWave == 2 && SaveManager.Instance != null && GameManager.Instance != null)
-                {
-                    GameManager.Instance.StopTimer();
-                    SaveManager.Instance.UpdateMissionRecord(
-                        GameManager.Instance.selectedMissionName, 
-                        GameManager.Instance.currentScore, 
-                        GameManager.Instance.currentMissionTime, 
-                        GameManager.Instance.currentDifficulty
-                    );
-                    Debug.Log("미션 클리어 기록 저장!");
-                }
             }
             
             // 웨이브 2나 보스로 넘어가는 로직은 트리거 방식으로 바꿀 예정이므로 일단 자동 대기는 유지하거나 주석 처리
