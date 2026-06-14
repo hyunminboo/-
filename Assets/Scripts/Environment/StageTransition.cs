@@ -57,6 +57,12 @@ public class StageTransition : MonoBehaviour
                     camFollow.SnapToTarget(); // 플레이어와 함께 카메라도 즉시 이동
                 }
             }
+            
+            // 스테이지 진입 알림 표시 (예: "Stage 3" -> "STAGE 3")
+            if (!string.IsNullOrEmpty(targetStageName))
+            {
+                StageIndicator.Show(targetStageName.ToUpper());
+            }
         }
     }
 }

@@ -115,5 +115,8 @@ public class GroundCollapseEvent : MonoBehaviour
         }
 
         // 보이지 않는 데스존 등 추가 처리가 필요하다면 여기서 수행
+        
+        // 스테이지 2 진입 알림 표시
+        StageIndicator.Show("STAGE 2");
     }
 }
