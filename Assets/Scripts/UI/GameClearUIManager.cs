@@ -44,7 +44,7 @@ public class GameClearUIManager : MonoBehaviour
         textObj.transform.SetParent(panelObj.transform, false);
         Text clearText = textObj.AddComponent<Text>();
         clearText.text = "GAME CLEAR";
-        clearText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        clearText.font = Resources.Load<Font>("Fonts/NanumGothic");
         clearText.fontSize = 100;
         clearText.fontStyle = FontStyle.Bold;
         clearText.color = Color.yellow;
@@ -98,7 +98,7 @@ public class GameClearUIManager : MonoBehaviour
         textObj.transform.SetParent(buttonObj.transform, false);
         Text txt = textObj.AddComponent<Text>();
         txt.text = label;
-        txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        txt.font = Resources.Load<Font>("Fonts/NanumGothic");
         txt.fontSize = 30;
         txt.color = Color.white;
         txt.alignment = TextAnchor.MiddleCenter;

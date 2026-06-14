@@ -274,7 +274,7 @@ public class EnemyHealth : MonoBehaviour
         txt.fontSize = amount >= 30f ? 36 : 28;
         txt.alignment = TextAnchor.MiddleCenter;
         txt.color = amount >= 30f ? new Color(1f, 0.3f, 0.1f, 1f) : new Color(1f, 0.8f, 0.2f, 1f); // 빨간주황 or 노랑
-        txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        txt.font = Resources.Load<Font>("Fonts/NanumGothic");
         txt.fontStyle = FontStyle.Bold;
         
         UnityEngine.UI.Outline outline = textObj.AddComponent<UnityEngine.UI.Outline>();

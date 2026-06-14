@@ -24,7 +24,7 @@ public class StageIndicator : MonoBehaviour
 
         Text text = textObj.AddComponent<Text>();
         text.text = stageName;
-        text.font = Resources.GetBuiltinResource<Font>("Arial.ttf") ?? Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        text.font = Resources.Load<Font>("Fonts/NanumGothic") ?? Resources.Load<Font>("Fonts/NanumGothic");
         text.fontSize = 120;
         text.alignment = TextAnchor.MiddleCenter;
         text.color = new Color(1f, 0.8f, 0.2f, 0f); // 약간 황금색

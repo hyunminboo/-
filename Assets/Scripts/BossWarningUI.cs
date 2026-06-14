@@ -35,7 +35,7 @@ public class BossWarningUI : MonoBehaviour
         GameObject xObj = new GameObject("X_Mark");
         xObj.transform.SetParent(canvasObj.transform, false);
         xMarkText = xObj.AddComponent<Text>();
-        xMarkText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf"); // 임시 폰트
+        xMarkText.font = Resources.Load<Font>("Fonts/NanumGothic"); // 임시 폰트
         xMarkText.text = "X";
         xMarkText.fontSize = 300;
         xMarkText.color = new Color(1f, 0f, 0f, 0.7f); // 반투명 빨강
@@ -49,7 +49,7 @@ public class BossWarningUI : MonoBehaviour
         GameObject textObj = new GameObject("Boss_Text");
         textObj.transform.SetParent(canvasObj.transform, false);
         bossText = textObj.AddComponent<Text>();
-        bossText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        bossText.font = Resources.Load<Font>("Fonts/NanumGothic");
         bossText.text = "WARNING\nBOSS";
         bossText.fontSize = 120;
         bossText.color = Color.white;

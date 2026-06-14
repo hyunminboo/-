@@ -57,7 +57,7 @@ public class SkillUpgradeUIBuilder : MonoBehaviour
         {
             if (f.name == "Inter-Regular") { cachedFont = f; return f; }
         }
-        cachedFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        cachedFont = Resources.Load<Font>("Fonts/NanumGothic");
         return cachedFont;
     }
 

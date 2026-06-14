@@ -323,7 +323,7 @@ public class PlayerHealth : MonoBehaviour
                     GameObject tObj = new GameObject("HealthText");
                     tObj.transform.SetParent(bgObj.transform, false);
                     healthText = tObj.AddComponent<Text>();
-                    healthText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                    healthText.font = Resources.Load<Font>("Fonts/NanumGothic");
                     healthText.fontSize = 24;
                     healthText.fontStyle = FontStyle.Bold;
                     healthText.color = Color.white;

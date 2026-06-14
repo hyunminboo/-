@@ -110,7 +110,7 @@ public class ItemPickup : MonoBehaviour
         txt.fontSize = 28;
         txt.alignment = TextAnchor.MiddleCenter;
         txt.color = new Color(0.30f, 0.90f, 0.95f, 1f); // 사이안
-        txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        txt.font = Resources.Load<Font>("Fonts/NanumGothic");
         txt.fontStyle = FontStyle.Bold;
         
         UnityEngine.UI.Outline outline = textObj.AddComponent<UnityEngine.UI.Outline>();
